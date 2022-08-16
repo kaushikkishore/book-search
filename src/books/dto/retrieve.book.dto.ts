@@ -1,5 +1,3 @@
-import { IsInt, IsString } from "class-validator";
-
 export class RetrieveBookDto {
     title: string;
     isbn: string;
