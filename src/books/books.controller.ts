@@ -8,8 +8,8 @@ export class BooksController {
   constructor(private readonly booksService: BooksService) {}
 
   @Get('/search')
-  async find(@Query() query: QueryBookDto): Promise<void> {
+  async find(@Query() query: QueryBookDto): Promise<Book[]> {
     //
-    const result = this.booksService.find(query);
+    return this.booksService.find(query);
   }
 }

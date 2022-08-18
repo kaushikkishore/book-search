@@ -9,6 +9,7 @@ export class QueryBookDto {
     public readonly pageIndex?: number,
     public readonly pageSize?: number,
     public readonly sortOrder?: SortOrder,
+    public readonly price?: number,
   ) {}
 }
 
