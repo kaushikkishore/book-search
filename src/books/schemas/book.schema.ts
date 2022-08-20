@@ -1,4 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { text } from 'express';
 import { Document } from 'mongoose';
 
 export type BookDocument = Book & Document;
